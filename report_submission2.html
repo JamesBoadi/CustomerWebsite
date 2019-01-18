@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/report_styles.css">
+    <title>Report</title>
+  </head>
+  <body>
+
+    <div class="report">
+      <h1>Report<h1>
+
+      <h3>No 3rd-party libraries used</h3>
+
+      <hr>
+
+      <h2>Game</h2>
+
+        <h3>1. Game in action</h3>
+
+        <p><strong>Code location:</strong> the file named <strong>game.js</strong> located inside javascript folder.</p>
+
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/QSyP6Zc4u6w?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h3>2. Advanced javascript</h3>
+
+          <h4>Objects</h4>
+          <p>Objects in this case are used for every piece of game that has to provide information or interact with other elements.
+          The reason they are used is to define how certain objects behave in a simple and easily understandable way, for example
+          projectile or tank objects within the game contain all of their behaviour in one prototype function
+          (projectile has gravity and directional movement properties, tank object has specific gun movement, etc.) which makes everything
+          easier to understand, update and maintain. <strong>Code location: game.js file, lines: 138-300.</strong>
+          </p>
+
+          <h4>Canvas</h4>
+          <p>Canvas element and manipulation of it in javascript is the base of this game. Animation, physics and graphics were visualised and implemented
+          using drawing functionality canvas element provides. For example object movement is created by drawing and redrawing each frame differently according to
+          how it interacts with the suroundings.</p>
+
+        <h3>3. Advanced game features</h3>
+
+          <p>Collision detection and increasing difficulty (target size decreases every 5th successful hit). <strong>Code location: game.js file, lines: 58-62 and 316-342.</strong></p>
+
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/plHNhB8o2Ro?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <p>Graphics and animation are demostrated in the game video at the top of the report.</p>
+
+      <hr>
+
+      <h2>User account</h2>
+
+        <h3>1. User registration</h3>
+
+          <p><strong>Code location: </strong>loginSignUp.js file inside javascript folder, lines: 3-41.</p>
+
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/yMgPYI719aw?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h3>2. User login</h3>
+
+          <p><strong>Code location: </strong>loginSignUp.js file inside javascript folder, lines: 46-79.</p>
+
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/iAJAx7YE0pw?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h3>3. User data (localStorage)</h3>
+
+          <p><strong>Save user data - </strong>code location: loginSignUp.js file inside javascript folder, lines: 3-41.</p>
+          <p><strong>Retrieve user data - </strong>code location: checkLocalStorage.js file inside javascript folder, lines: 6-14.</p>
+          <p><strong>Log in status - </strong>code location: checkLocalStorage.js file inside javascript folder, lines: 17-50.</p>
+
+      <hr>
+
+      <h2>Ranking table</h2>
+
+        <h3>1. User score</h3>
+
+          <p><strong>Update user score - </strong>code location: game.js file inside javascript folder, lines: 305-312.</p>
+
+        <h3>2. New user and leaderboard</h3>
+
+          <p><strong>Code location: </strong>createSortedHighscores.js inside javascript folder.</p>
+
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/D-2IzvzFzJU?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h3>3. Sorting by score</h3>
+
+          <p><strong>Code location: </strong>createSortedHighscores.js inside javascript folder.</p>
+
+      <hr>
+      
+    </div>
+  </body>
+</html>

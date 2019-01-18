@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/report_styles.css">
+    <title>Report</title>
+  </head>
+  <body>
+    <div class="report">
+      <h1>Report<h1>
+
+      <h3>No 3rd-party libraries used</h3>
+
+      <h2>Screenshots</h2>
+
+      <h3>Home page (index.php)</h3>
+      <img src="images/reportImg/homepageImg.png">
+
+      <h3>Play page (play.php)<h3>
+      <img src="images/reportImg/playpageImg.png">
+
+      <h3>Highscores page (highscore.php)<h3>
+      <img src="images/reportImg/highscorespageImg.png">
+
+      <h3>Login/Sign Up page (Login active) (loginregister.php)<h3>
+      <img src="images/reportImg/loginsignuppageImg_login.png">
+
+      <h3>Login/Sign Up page (Sign Up active) (loginregister.php)<h3>
+      <img src="images/reportImg/loginsignuppageImg_signup.png">
+
+      <hr>
+
+      <h2>HTML Structure elements<h2>
+
+      <h3>1. Nav</h3>
+      <p>Nav element is mainly used for holding navigation bar within every page of this website.
+      The code can be found in function.php, lines: 32-48.</p>
+
+      <h3>2. Article</h3>
+      <p>Article element is used within Home page to contain Home page content.
+      The code can be found in index.php, lines: 13-28.</p>
+
+      <h3>3. Header</h3>
+      <p>Header element is used in Home page to function as a "Welcome" and "How to play" text conatiner.
+      The code can be found in index.php, lines: 15-18.</p>
+
+      <h3>4. Section</h3>
+      <p>Section element conatins the list of commands that will be used to interact with the game.
+      The code can be found in play.php, lines: 17-25.</p>
+
+      <h3>5. Footer</h3>
+      <p>Footer element holds the bottom of the page content - Middlesex logo, and is used in every page.
+      The code can be found in functions.php, lines: 54-59.</p>
+
+      <hr>
+
+      <h2>HTML Content elements</h2>
+
+      <h3>1. h1</h3>
+      <p>H1 element is used in Home and Highscores pages for "Welcome" text and "Leaderboard" title.</p>
+
+      <h3>2. h2</h3>
+      <p>H2 element is used in Home page after "Welcome" text to contain the "How to play" text.</p>
+
+      <h3>3. h4</h3>
+      <p>H4 element is used in Highscores page to hold "View full leaderboard" link.</p>
+
+      <h3>4. a</h3>
+      <p>A element can be found within navigation bar, as well as on all the logos and "View full leaderboard" link.</p>
+
+      <h3>5. div</h3>
+      <p>Div element is within every page as a conatiner for grid layout and as a container for Login/Signup area and Leaderboard.</p>
+
+      <h3>6. ul</h3>
+      <p>Ul element is used to display "How to play" content.</p>
+
+      <h3>7. ol</h3>
+      <p>Ol element is used to display Leaderboard in numerical order inside Highscores page.</p>
+
+      <h3>8. li</h3>
+      <p>Li element is used to conatin list items within every Ol, Ul and Menu element in the website.</p>
+
+      <h3>9. menu</h3>
+      <p>Menu element conatins links in navigation bar.</p>
+
+      <h3>10. img</h3>
+      <p>Img content element is used to display Logo of the website as well as Middlesex logo in the footer.</p>
+
+      <h3>11. input</h3>
+      <p>Input element can be found in Login/Signup page within login and signup areas.</p>
+
+      <h3>12. button</h3>
+      <p>Button element is used in login and signup areas.</p>
+
+      <hr>
+
+      <h2>CSS Page design</h2>
+
+      <h3>Text</h3>
+      <p>Text formating is applied with the use of font: ('Courier New', monospace), and text spacing which is set to 1 px. Font
+      and text spacing can be found in styles.css file within styling block of body element, style.css Lines: 10-11.</p>
+
+      <h3>Colour</h3>
+      <p>Colour formating is applied on navigation bar and button elements. When hovering the background and text colour changes.
+      Colour formatting is also applied with .active class elements in navigation bar. Navigation bar and content of each page has
+      opacity property set to them in order to make them transparent.</p>
+
+      <h3>Positioning</h3>
+      <p>Position formatting is mostly applied with margins, grid layout and flex properties. Navigation bar is made using inline-flex
+      and justify-content: space-between properties to align and separate logo and links. Width property and Margins are used on
+      every page in order to center elements. Every page has a seperate div element with grid layout, to dedicate a place for specific part of the page
+      content styles.css, lines: 72-79, 109-116, 218-226.</p>
+
+      <h3>Shape</h3>
+      <p>Shape formating is applied with the use of rounded corners. Content in every page has border-radius property applied, that
+      includes Canvas element in Play.php page, Leaderboard in highscore.php page and content inside Home page.</p>
+
+      <hr>
+
+      <h2>CSS Classes and IDs</h2>
+
+      <h3>Class</h3>
+      <p>Classes are used for navigation bar as .navBar in styles.css lines: 23-67, because in every page navigation bar has to appear almost
+      the same. Class .active is used to highlight elements in navigation bar which are currently visible to the user, styles.css lines: 58-61.
+      Another use of class is with login and signup forms. Both areas are styled the same therefore class .inputfield is used on both, styles.css lines: 180-214.</p>
+
+      <h3>ID</h3>
+      <p>ID is used with all page containers of the website, because each page requires slighlty different grid layout, styles.css lines: 72-79, 109-116, 218-226, 275-282. ID is as well used for the websites logo,
+      because it needs individual styling and is only used once. IDs are assigned to each input field inside login and signup areas, they
+      need to have IDs in order to access their values later on in the second part of the project, loginregister.php lines: 24, 26, 33, 35, 37.</p>
+
+      <hr>
+
+      <h2>Grid layout</h2>
+      <p>Every page container has an individual ID assigned in order to allow specific grid layout to be applied. Display: grid; property is used, and the place of each part of the page content is sorted
+      by grid-template-areas property, styles.css lines: 72-79, 109-116, 218-226, 275-282.</p>
+
+      <hr>
+
+      <h2>PHP</h2>
+
+      <h3>PHP functions</h3>
+      <p>Function navBar($pageName) generates a navigation bar, assigns ID with grid layout to a specified page, and sets class to .active
+      to the page that is currently displayed. It is called at the top of every page after the function outputHeader($title). Function can be found in the functions.php file within the lines: 20-49.</p>
+
+      <h3>Reusable PHP functions</h3>
+      <p>Function outputHeader($title) uses echo command to output <!DOCTYPE html>, opening html tag as well as the whole head including the title of the page and opening body tag.
+      It is called at the top of every page.
+      Function can be found in functions.php file, lines: 5-16.</p>
+      <p>Function footer() uses echo command to output the footer with Middlesex logo and closing body and html tags. It is called at the bottom of every page.
+      Function can be found in functions.php file, lines: 53-63.</p>
+    </div>
+  </body>
+</html>

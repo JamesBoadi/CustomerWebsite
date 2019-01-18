@@ -1,0 +1,366 @@
+/* Styling for html and body areas ↓ -----------------------------------------*/
+
+
+html {
+  background: url("../images/bgImg.jpg");
+  background-size: cover;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: static;
+  overflow-y: auto;
+  background-size: cover;
+}
+
+hr {
+  background: black;
+  opacity: 0.3;
+}
+
+/* Styling for Navigation Bar ↓ ----------------------------------------------*/
+
+.navBar {
+  grid-area: header;
+  width: 100%;
+  background-color: black;
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.8;
+  justify-content: space-between;
+  border-bottom: 1px solid #ff7733;
+}
+
+.navLinks {
+  list-style: none;
+  font-weight: bold;
+}
+
+.navLinks li {
+  float: right;
+}
+
+.navLinks li a {
+  font-size: 21px;
+  color: white;
+  padding: 21px 30px;
+  transition: background 0.1s ease-in-out;
+  height: 100%;
+  text-decoration: none;
+}
+
+.navLinks li a:hover {
+  background: white;
+  color: black;
+  height: 100%;
+}
+
+.navLinks li a.active {
+  background: #ff7733;
+  color: black;
+}
+
+#logoArea {
+  float: right;
+  display: inline-flex;
+  margin: 0 20px;
+}
+
+#logo {
+  width: 150px;
+}
+
+
+/* Styling for Home page ↓ ---------------------------------------------------*/
+
+#index_Area {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header" "content";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+#infoField {
+  grid-area: content;
+  font-size: 20px;
+  padding: 10px;
+  margin: 4rem auto 4rem auto;
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+#infoField header h1 {
+  font-size: 1.7em;
+  margin: 2em auto;
+}
+
+#infoField h1, h2, h3 {
+  text-align: center;
+}
+
+#infoField ul {
+  padding: 0 25%;
+}
+
+/* Styling for Login/Register page ↓ -----------------------------------------*/
+
+#login_Area {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header" "LR";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+#LogRegContainer {
+  grid-area: LR;
+  border: 2px solid black;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  border-radius: 5px;
+  margin: 4rem auto 4rem auto;
+  width: 40%;
+  overflow: hidden;
+  display: block;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+#log, #reg {
+  overflow: hidden;
+}
+
+/* Styling for Login/Register mini navigation bar ↓ --------------------------*/
+
+.nav_LR {
+  width: 100%;
+  background: black;
+  font-size: 130%;
+  list-style: none;
+  display: inline-flex;
+  padding: 2% 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav_LR  li {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.nav_LR li a {
+  color: white;
+  text-align: center;
+  padding: 5% 20%;
+  margin: 0px;
+  text-decoration: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  transition: background 0.1s ease-in-out;
+}
+
+.nav_LR li a:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.nav_LR li a.active {
+  background: white;
+  color: black;
+}
+
+/* Styling for login and register input areas and buttons ↓ ------------------*/
+
+.inputfield {
+  width: 80%;
+  margin: auto auto auto 0;
+  padding: 10%;
+}
+
+.inputfield input {
+  margin: 5px 0 10px 0;
+  border: 1px solid black;
+  height: 60%;
+  background: white;
+  border-radius: 5px;
+  margin: 0 0 5% 0;
+}
+
+.inputfield a  {
+  text-align: left;
+  font-size: 120%;
+}
+
+.inputfield button {
+  width: 50%;
+  margin: 20px auto;
+  background: #ff7733;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  color: black;
+}
+
+.inputfield button:hover {
+  background: white;
+  color: black;
+}
+
+/* Styling for Play page ↓ ---------------------------------------------------*/
+
+#play_Area {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "header" "playfield" "commandlist";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+#canvasCmdCont {
+  grid-area: playfield;
+  position: relative;
+  margin: 4rem auto 4rem auto;
+}
+
+#cmdCont {
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: inline-flex;
+}
+
+#commandBtn {
+  margin-left: 10px;
+  width: 70px;
+  border: 2px solid #ff7733;
+  border-radius: 5px;
+  background-color: #ff7733;
+  color: black;
+  font-weight: bold;
+}
+
+#commandlist {
+  width: 800px;
+  margin: 0 auto 4rem auto;
+  text-align: justify;
+  padding: 20px 50px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  color: white;
+  opacity: 0.8;
+  background-color: black;
+}
+
+#commandline {
+  width: 300px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#mycanvas {
+  margin: auto;
+  width: 900px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  background: white;
+}
+
+/* Styling for Highscores page ↓ ---------------------------------------------*/
+
+#highscores_Area {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "header" "highscores";
+  grid-template-rows: auto auto;
+}
+
+#leaderboard {
+  grid-area: highscores;
+  width: 45%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  margin: 4rem auto 4rem auto;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+
+#leaderboard h1 {
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+#leaderboard h4 {
+    text-decoration: none;
+}
+
+#positions li div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#positions li div a {
+    margin-right: 25px;
+}
+
+#leaderboard hr {
+  background: black;
+  margin-right: 25px;
+  opacity: 0.3;
+}
+
+/* Styling for Footer and footer image ↓ -------------------------------------*/
+
+.footer {
+   font-family: 'Arial', sans-serif;
+   font-size: 10px;
+   display: flex;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 7%;
+   background: transparent;
+   color: white;
+   align-items: center;
+   justify-content: left;
+}
+
+.footer img {
+  height: 36px;
+  width: 32px;
+  margin: 0 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
