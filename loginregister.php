@@ -34,7 +34,7 @@
         <a>Password</a>
         <input id="passwordR" type="password">
         <a>Repeat Password</a>
-        <input id="passwordRrepeated" type="password"> 
+        <input id="passwordRrepeated" type="password">  
         <button id="regBtn" type="button" onclick="signUp(users)">Sign Up</button>
       </div>
 
