@@ -102,10 +102,12 @@ hr {
 #infoField header h1 {
   font-size: 1.7em;
   margin: 2em auto;
+  background: black;
 }
 
 #infoField h1, h2, h3 {
   text-align: center;
+  background: black;
 }
 
 #infoField ul {
@@ -214,6 +216,42 @@ hr {
   color: black;
 }
 
+
+#registerButton {
+  width: 50%;
+  margin: 20px auto;
+  background: #ff7733;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  color: black;
+}
+
+#registerButton:hover
+{
+  background: white;
+  color: black;
+}
+
+
+#logInButton {
+  width: 50%;
+  margin: 20px auto;
+  background: #ff7733;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  color: black;
+}
+
+#logInButton:hover
+{
+  background: white;
+  color: black;
+}
+
 .inputfield button:hover {
   background: white;
   color: black;
@@ -268,6 +306,10 @@ hr {
   color: white;
   opacity: 0.8;
   background-color: black;
+}
+
+#commandlist h2 {
+  background: black;
 }
 
 #commandline {
@@ -336,6 +378,158 @@ hr {
   margin-right: 25px;
   opacity: 0.3;
 }
+
+/* Styling for Market page ↓ ---------------------------------------------*/
+
+#market_Area {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  grid-template-areas: "header header" "search points" "items basket";
+  grid-template-rows: auto auto auto;
+}
+
+#searchField {
+  grid-area: search;
+  display: inline-flex;
+  width: 60%;
+  margin: 4rem auto;
+}
+
+#barBtnHolder {
+  width: 85%;
+  display: inline-flex;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  justify-content: center;
+}
+
+.searchBar {
+  width: 88%;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+#searchBtn {
+  width: 12%;
+  margin: 0;
+  border: 2px solid black;
+  border-radius: 0 5px 5px 0;
+  background-color: #ff7733;
+  color: black;
+  opacity: 0.9;
+  font-weight: bold;
+}
+
+#searchBtn img {
+  height: 20px;
+  width: 20px;
+}
+
+#sortBtn {
+  width: 15%;
+  margin: auto 0 auto 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#points {
+  width: 60%;
+  grid-area: points;
+  color: white;
+  margin: auto auto auto 0;
+  text-align: center;
+  background: #1a1a1a;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#itemHolder {
+  width: 60%;
+  grid-area: items;
+  margin: 0 auto auto auto;
+  background: black;
+  opacity: 0.9;
+  border: 2px solid black;
+  border-left: 2px solid  #1a1a1a;
+  border-right: 2px solid  #1a1a1a;
+  border-radius: 5px;
+
+}
+
+#itemHolder h1, h2 {
+  color: white;
+  margin: 0;
+  padding: 0 0 0 0.5rem;
+  background: #1a1a1a;
+}
+
+.singleItem {
+  margin: 1rem 1rem;
+  padding: 1rem;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  border-top: 1px solid #ff7733;
+  border-bottom: 1px solid #ff7733;
+  border-radius: 5px;
+  background: black;
+}
+
+.singleItem * {
+  align-self: center;
+}
+
+#basketContainer {
+  grid-area: basket;
+  width: 60%;
+  margin: 0 auto auto 0;
+  opacity: 0.9;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: black;
+}
+
+#basket {
+  background: black;
+}
+
+#basketContainer h1 {
+  color: white;
+  margin: 0;
+  padding: 0 0 0 0.5rem;
+  background: #1a1a1a;
+}
+
+#basketContainer h2 {
+  text-align: right;
+  padding: 0 0.5rem 0 0;
+}
+
+#basketContainer #clear {
+  font-size: 80%;
+  text-align: right;
+}
+
+#basketContainer #checkoutBtn {
+  color: black;
+  background: #ff7733;
+  text-align: center;
+}
+
+.itemL {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+}
+
+
 
 /* Styling for Footer and footer image ↓ -------------------------------------*/
 
