@@ -19,9 +19,9 @@ function outputHeader($title) {
 
 function navBar($pageName) {
 
-  $linkNames = array("Login / Sign Up", "Highscores", "Play", "Home");
-  $idNames = array("login_Area", "highscores_Area", "play_Area", "index_Area");
-  $ids = array("user", "none", "none", "none");
+  $linkNames = array("Login / Sign Up", "Highscores", "Play", "Market", "Home");
+  $idNames = array("login_Area", "highscores_Area", "play_Area", "market_Area", "index_Area");
+  $ids = array("user", "none", "none", "none", "none");
 
   //Assigns id names to specify css grid area of each page
 
@@ -36,7 +36,7 @@ function navBar($pageName) {
 
   //Sets class="active" for selected page
 
-  $linkAddresses = array("loginregister.php", "highscore.php", "play.php", "index.php");
+  $linkAddresses = array("loginregister.php", "highscore.php", "play.php", "market.php", "index.php");
 
   for($x = 0; $x < count($linkNames); $x++) {
     echo '<li><a id="'. $ids[$x] .'" ';
